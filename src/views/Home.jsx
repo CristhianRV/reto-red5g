@@ -93,7 +93,7 @@ const Home = () => {
 			<div className={style.containerHome}>
 				<div className={style.title}>
 					<div>
-						<img src="src/media/image/logo.svg" alt="logo" />
+						<img src="media/image/logo.svg" alt="logo" />
 					</div>
 					<div className={style.exitSesion} onClick={handlerExit}>
 						<h6>Cerrar sesión</h6>

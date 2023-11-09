@@ -48,40 +48,40 @@ const Loggin = () => {
 				<div className={style.contImg}>
 					<img
 						className={style.img1}
-						src="src/media/image/sombras.svg"
+						src="media/image/sombras.svg"
 						alt="sombras"
 					/>
 					<img
 						className={style.img2}
-						src="src/media/image/sombras.svg"
+						src="media/image/sombras.svg"
 						alt="sombras"
 					/>
 					<img
 						className={style.img3}
-						src="src/media/image/elipse.svg"
+						src="media/image/elipse.svg"
 						alt="elipse"
 					/>
 					<img
 						className={style.img4}
-						src="src/media/image/elipse.svg"
+						src="media/image/elipse.svg"
 						alt="elipse"
 					/>
 
 					<img
 						className={style.img5}
-						src="src/media/image/burbujas.svg"
+						src="media/image/burbujas.svg"
 						alt="burbujas"
 					/>
 
 					<img
 						className={style.img6}
-						src="src/media/image/burbujas.svg"
+						src="media/image/burbujas.svg"
 						alt="burbujas"
 					/>
 				</div>
 				<div className={style.containerForm}>
 					<div className={style.titleForm}>
-						<img src="src/media/image/logo.svg" alt="logo" />
+						<img src="media/image/logo.svg" alt="logo" />
 						<h3>Sufipay</h3>
 						<h5>Administrador comercial</h5>
 					</div>
