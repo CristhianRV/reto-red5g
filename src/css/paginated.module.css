@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Croissant+One&family=Lato&family=Permanent+Marker&family=Rubik&family=Young+Serif&display=swap');
+.container {
+	display: flex;
+	width: 1280px;
+	justify-content: center;
+	align-items: center;
+}
+.containerPaginated {
+	width: 508px;
+	height: 80px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 16px #aaaaaa4d;
+	border-radius: 24px 24px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btnPagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn1 {
+	background: url(../media/icons/flecha-izq16.png) center center no-repeat;
+	width: 24px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 40%;
+	transition: 0.4s;
+	margin-right: 16px;
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+.btn2 {
+	background: url(../media/icons/flecha-der16.png) center center no-repeat;
+	width: 24px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 40%;
+	transition: 0.4s;
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+.btnPagination input {
+	width: 48px;
+	height: 48px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #abb9c780;
+	border-radius: 6px;
+	text-align: center;
+	outline: none;
+	font: normal normal normal 16px Lato;
+	letter-spacing: 0px;
+	color: #414141;
+	margin-right: 8px;
+}
+
+.btnPagination input[type='number']::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.btnPagination p {
+	margin-right: 16px;
+	font: normal normal normal 16px/20px Lato;
+	letter-spacing: 0px;
+	color: #414141;
+}
+.select {
+	position: relative;
+	margin-left: 24px;
+}
+
+.select select {
+	width: 268px;
+	height: 56px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #abb9c780;
+	border-radius: 6px;
+	font: normal normal normal 16px Lato;
+	letter-spacing: 0px;
+	text-indent: 16px;
+	color: #414141;
+	outline: none;
+}
+.select select {
+	background: url(../media/icons/select16.png) no-repeat 228px 16px #fff !important;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.select select::-ms-expand {
+	display: none;
+}
+
+.select span {
+	position: absolute;
+	width: fit-content;
+	top: 8px;
+	left: 16px;
+	font: normal normal normal 12px Lato;
+	letter-spacing: 0px;
+	color: #abb9c7;
+}

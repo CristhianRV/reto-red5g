@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Croissant+One&family=Open+Sans:wght@500;700&family=Permanent+Marker&family=Rubik&family=Young+Serif&display=swap');
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.containerLoggin {
+	width: 1280px;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerForm {
+	width: 400px;
+	height: 476px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.titleForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation-name: animationTitle;
+	animation-duration: 1s;
+	animation-delay: 0.1s;
+}
+.containerForm img {
+	width: 264px;
+	height: 76px;
+	margin-bottom: 12px;
+}
+
+.containerForm h3 {
+	width: 368px;
+	height: 48px;
+	margin: 0 0 8px;
+	text-align: center;
+	font: normal normal bold 40px Open Sans;
+	color: #413e4d;
+}
+
+.containerForm h5 {
+	width: 368px;
+	height: 20px;
+	margin: 0 0 32px;
+	text-align: center;
+	font: normal normal normal 16px Open Sans;
+	letter-spacing: 0px;
+	color: #413e4d;
+}
+
+.form {
+	width: 400px;
+	height: 156px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 16px #00000029;
+	border-radius: 12px;
+	gap: 12px;
+	margin-bottom: 32px;
+
+	animation-name: animationForm;
+	animation-duration: 1s;
+	animation-delay: 0.1s;
+}
+.containerInput {
+	position: relative;
+}
+.containerInput input {
+	width: 360px;
+	height: 56px;
+	padding: 0;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	outline: none;
+	border: 1px solid #abb9c780;
+	border-radius: 6px;
+
+	font: normal normal normal 16px Open Sans;
+	letter-spacing: 0px;
+	color: #413e4d;
+
+	text-indent: 16px;
+}
+.validation {
+	border: 1px solid red !important;
+}
+
+.containerInput span {
+	position: absolute;
+	left: 16px;
+	top: 18px;
+	color: #abb9c7;
+	text-align: left;
+	font: normal normal normal 16px Open Sans;
+	letter-spacing: 0px;
+	transition: 0.4s;
+}
+
+.containerInput input:hover ~ span,
+.containerInput input:focus ~ span,
+.containerInput input:valid ~ span {
+	top: 8px;
+	font-size: 12px;
+}
+
+.message1,
+.message2 {
+	position: absolute;
+	margin: 0;
+	color: #413e4d;
+	font-size: 12px;
+	font-weight: 600;
+	font-family: Open Sans;
+}
+.message1 {
+	bottom: 16.1rem;
+}
+.message2 {
+	overflow: hidden;
+}
+
+.button {
+	width: 174px;
+	height: 48px;
+	background: #dd3542 0% 0% no-repeat padding-box;
+	border-radius: 24px;
+	position: relative;
+	z-index: 5;
+	border: none;
+	font: normal normal bold 16px Open Sans;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+	margin-bottom: 24px;
+	animation-name: animationForm;
+	animation-duration: 1s;
+	animation-delay: 0.1s;
+}
+.button:hover {
+	background-color: #e61a2b;
+	box-shadow: 0 0 5px 1.2px rgb(246, 134, 142);
+}
+
+.containerForm a {
+	width: 336px;
+	height: 16px;
+	text-decoration: underline;
+	font: normal normal normal 12px Open Sans;
+	letter-spacing: 0px;
+	color: #413e4d;
+	position: relative;
+	z-index: 4;
+	text-align: center;
+	cursor: pointer;
+	animation-name: animationForm;
+	animation-duration: 1s;
+	animation-delay: 0.1s;
+}
+
+/* ANIMACION */
+
+.contImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.contImg img {
+	position: absolute;
+	/* width: 40%; */
+}
+.img1 {
+	top: -7.5rem;
+	right: -17rem;
+	animation-name: animationImage1;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+}
+
+.img2 {
+	left: -9rem;
+	bottom: -20.5rem;
+	z-index: 1 !important;
+	animation-name: animationImage2;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+}
+.img3 {
+	left: 18rem;
+	top: 24.5rem;
+	animation-name: animationImage1;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+}
+.img4 {
+	right: 20.7rem;
+	bottom: 14.5rem;
+	animation-name: animationImage2;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+}
+
+.img5 {
+	left: 21rem;
+	top: 17.3rem;
+	animation-name: animationImage1;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+}
+
+.img6 {
+	right: 22.2rem;
+	bottom: 9rem;
+	animation-name: animationImage2;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+}
+
+/* codigo de animaciones */
+
+@keyframes animationTitle {
+	0% {
+		opacity: 0;
+		transform: translateY(-150px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes animationForm {
+	0% {
+		opacity: 0;
+		transform: translateY(150px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes animationImage1 {
+	0% {
+		opacity: 0;
+		transform: translate(100px, -10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+@keyframes animationImage2 {
+	0% {
+		opacity: 0;
+		transform: translate(-100px, 10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
