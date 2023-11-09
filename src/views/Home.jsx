@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import style from '../css/home.module.css';
 import { dataFuction, asigDate } from '../utils/functions';
+import logo from '../media/image/logo.svg';
 // import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'; // Import the default styles
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
@@ -93,7 +94,7 @@ const Home = () => {
 			<div className={style.containerHome}>
 				<div className={style.title}>
 					<div>
-						<img src="media/image/logo.svg" alt="logo" />
+						<img src={logo} alt="logo" />
 					</div>
 					<div className={style.exitSesion} onClick={handlerExit}>
 						<h6>Cerrar sesión</h6>

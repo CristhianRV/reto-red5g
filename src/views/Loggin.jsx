@@ -1,5 +1,7 @@
 import style from '../css/loggin.module.css';
 import image1 from '../media/image/sombras.svg';
+import image2 from '../media/image/elipse.svg';
+import image3 from '../media/image/burbujas.svg';
 import logo from '../media/image/logo.svg';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -49,33 +51,13 @@ const Loggin = () => {
 			<div className={style.containerLoggin}>
 				<div className={style.contImg}>
 					<img className={style.img1} src={image1} alt="sombras" />
-					<img
-						className={style.img2}
-						src="media/image/sombras.svg"
-						alt="sombras"
-					/>
-					<img
-						className={style.img3}
-						src="media/image/elipse.svg"
-						alt="elipse"
-					/>
-					<img
-						className={style.img4}
-						src="media/image/elipse.svg"
-						alt="elipse"
-					/>
+					<img className={style.img2} src={image1} alt="sombras" />
+					<img className={style.img3} src={image2} alt="elipse" />
+					<img className={style.img4} src={image2} alt="elipse" />
 
-					<img
-						className={style.img5}
-						src="media/image/burbujas.svg"
-						alt="burbujas"
-					/>
+					<img className={style.img5} src={image3} alt="burbujas" />
 
-					<img
-						className={style.img6}
-						src="media/image/burbujas.svg"
-						alt="burbujas"
-					/>
+					<img className={style.img6} src={image3} alt="burbujas" />
 				</div>
 				<div className={style.containerForm}>
 					<div className={style.titleForm}>
