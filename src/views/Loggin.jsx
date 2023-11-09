@@ -1,4 +1,6 @@
 import style from '../css/loggin.module.css';
+import image1 from '../media/image/sombras.svg';
+import logo from '../media/image/logo.svg';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { user } from '../utils/user.js';
@@ -46,11 +48,7 @@ const Loggin = () => {
 		<div className={style.container}>
 			<div className={style.containerLoggin}>
 				<div className={style.contImg}>
-					<img
-						className={style.img1}
-						src="media/image/sombras.svg"
-						alt="sombras"
-					/>
+					<img className={style.img1} src={image1} alt="sombras" />
 					<img
 						className={style.img2}
 						src="media/image/sombras.svg"
@@ -81,7 +79,7 @@ const Loggin = () => {
 				</div>
 				<div className={style.containerForm}>
 					<div className={style.titleForm}>
-						<img src="media/image/logo.svg" alt="logo" />
+						<img src={logo} alt="logo" />
 						<h3>Sufipay</h3>
 						<h5>Administrador comercial</h5>
 					</div>
